@@ -45,11 +45,32 @@ app.get('/', (req, res) => {
 });
 
 // contact route
-app.get('/contact', (req, res) => {
-    state={contact : true}
-    head={title:"Contact - Week 1"}
-    res.render('contact', { state, head});
-    console.log('contact')
+app.get('/staff', (req, res) => {
+    state={staff : true}
+    head={title:"Staff - Week 1"}
+    res.render('staff', { state, head});
+    console.log('staff')
+  });
+
+  app.get('/gallery', (req, res) => {
+    state={gallery : true}
+    head={title:"Gallery - Week 1"}
+    res.render('gallery', { state, head});
+    console.log('gallery')
+  });
+
+  app.get('/guides', (req, res) => {
+    state={guides : true}
+    head={title:"Guides - Week 1"}
+    res.render('guides', { state, head});
+    console.log('guides')
+  });
+
+  app.get('/contact_form', (req, res) => {
+    state={contact_form : true}
+    head={title:"Contact_form - Week 1"}
+    res.render('contact_form', { state, head});
+    console.log('contact_form')
   });
 
 

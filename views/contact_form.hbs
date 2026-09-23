@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Uni Project about a fake photography company for Web Design">
-        <meta name="keywords" content="Camera.inc, homepage, photography, cameras">
+        <meta name="keywords" content="contact form">
         <title>Homepage</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="styles/styles.css">
@@ -16,7 +16,7 @@
             <h1>Camera Inc.</h1>
             <nav>
                 <ul>
-                    <li class="linkButtonDisplay" style="background-color:antiquewhite;"><a href="/">Home</a></li>
+                    <li class="linkButtonDisplay"><a href="/">Home</a></li>
                     <li class="linkButtonDisplay"><a href="/gallery">Gallery</a></li>
                     <li class="linkButtonDisplay"><a href="/guides">Guides</a></li>
                     <li class="linkButtonDisplay"><a href="/staff">About Us</a></li>
@@ -40,17 +40,35 @@
                 </ol>
             </nav>
             <section class="section2">
-                <h2>Welcome!</h2>
-                <p>Welcome to Camera Inc., your one-stop shop for all things photography!</p>
-                <p>We're a company dedicated to providing the best support to new photographers and providing high-quality services.</p>
-                <img class="homepageImages" src="images/Man_With_Camera_1.png" alt="man with camera">
-                <img class="homepageImages" src="images/Man_With_Camera_2.png" alt="man with camera 2">
-                <img class="homepageImages" src="images/Man_With_Camera_3.png" alt="man with camera 3">
-                <p>Look at our amazing photographers in action!</p>
-                <p>We're looking to help you capture the perfect shot!</p>
+                <h2>Join Our Community!</h2>
+                <p>Join our community to receive updates on the latest photography news, tips, and exclusive offers!</p>
+            <form action="http://foo.com" method="get">
+            
+            <label for="first_name">First Name:<span class="required">*</span></label>
+            <input type="text" name="first_name" id="first_name" autofocus required><br>
 
-                <p><a href="contact_form.html" class="linkButtonDisplay">Join Our Community</a></p>
-                
+            <label for="last_name">Last Name:<span class="required">*</span></label>
+            <input type="text" name="last_name" id="last_name" required><br>
+
+            <label for="email">Email:<span class="required">*</span></label>
+            <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender_male" name="gender" value="male"> Male
+            <input type="radio" id="gender_female" name="gender" value="female"> Female
+            <input type="radio" id="gender_other" name="gender" value="other" checked> Other <br>
+
+            <label for="internet">Heard of us:</label>
+            <fieldset>
+                <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet <br>
+                <input type="checkbox" class="margin1" id="hear_paper" name="paper" value="paper"> Newspaper <br>
+                <input type="checkbox" class="margin1" id="hear_friend" name="friend" value="friend"> Friend <br>
+                <input type="checkbox" class="margin1" id="hear_other" name="Add" value="Add"> Others <br>
+            </fieldset> <br>
+
+            <input type="submit" name="submit" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset" value="Reset">
+        </form>
             </section>
         </main>
     </body>
