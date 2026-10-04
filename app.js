@@ -73,6 +73,14 @@ app.get('/staff', (req, res) => {
     console.log('contact_form')
   });
 
+  app.get('/responsiveexample', (req, res) => {
+    state={contact_form : true}
+    head={title:"ResponsiveExample - Week 1"}
+    res.render('responsiveexample', { state, head});
+    console.log('responsiveexample')
+  });
+
+
 
 // Start the server
 app.listen(3000, () => {
